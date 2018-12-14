@@ -47,6 +47,7 @@ resource "aws_ecs_task_definition" "default" {
   memory                   = "${var.task_memory}"
   tags                     = "${module.default_label.tags}"
   execution_role_arn       = "arn:aws:iam::945441221529:role/ecsTaskExecutionRole"
+  task_role_arn            = "arn:aws:iam::945441221529:role/ecsTaskExecutionRole"
 }
 
 # Service
