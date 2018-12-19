@@ -107,3 +107,7 @@ variable "deployment_minimum_healthy_percent" {
   description = "The lower limit (as a percentage of `desired_count`) of the number of tasks that must remain running and healthy in a service during a deployment"
   default     = 100
 }
+
+variable "execution_role_arn" {}
+variable "task_role_arn" {}
+
